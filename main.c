@@ -95,6 +95,8 @@ int main(void)
 	cyhal_gpio_register_callback(CYBSP_USER_BTN, &cb_data);
 	cyhal_gpio_enable_event(CYBSP_USER_BTN, CYHAL_GPIO_IRQ_FALL, GPIO_INTERRUPT_PRIORITY, true);
 
+
+	/* Enable global interrupts */
     __enable_irq();
 
 
